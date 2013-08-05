@@ -1,0 +1,17 @@
+# Maven og Eclipse-ting
+target/
+.project
+.classpath
+.settings/
+
+# IDEA-ting
+*.iml
+*.ipr
+*.iws
+*.ids
+/.idea
+
+# OS X-morsomheter
+.DS_Store
+
+# Legg til mer ved behov

@@ -25,7 +25,7 @@ public class HelloWorldTest {
 
     @Test
     @Ignore
-    public void getMotRotenSkalGiHelloWorld() {
+    public void getMotHelloWorldSkalGiHelloWorld() {
         final String svar =
             given().
             expect().
@@ -34,6 +34,32 @@ public class HelloWorldTest {
                 get(REST_URL + "/helloworld").asString();
 
         assertEquals("Hello world!", svar);
+    }
+
+    @Test
+    @Ignore
+    public void getMotHelloWorldMedIdSkalGiSvarMedId() {
+        final String svar =
+            given().
+            expect().
+                statusCode(200).
+            when().
+                get(REST_URL + "/helloworld/123").asString();
+
+        assertEquals("Fikk id: 123", svar);
+    }
+
+    @Test
+    @Ignore
+    public void getMotSokSkalGiSokesvar() {
+        final String svar =
+            given().
+            expect().
+                statusCode(200).
+            when().
+                get(REST_URL + "/helloworld/sok?id=123").asString();
+
+        assertEquals("Ville sokt med id='123'", svar);
     }
 
     @Test
@@ -48,6 +74,6 @@ public class HelloWorldTest {
         expect().
             statusCode(200).
         when().
-            post(REST_URL + "/logg");
+            post(REST_URL + "/helloworld/logg");
     }
 }

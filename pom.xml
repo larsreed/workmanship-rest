@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>no.mesan.timereg</groupId>
-  <artifactId>timereg</artifactId>
+  <groupId>no.mesan.workmanship-rest</groupId>
+  <artifactId>workmanship-rest</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>timereg Maven Webapp</name>
+  <name>workmanship-rest Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <properties>

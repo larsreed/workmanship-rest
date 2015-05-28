@@ -9,22 +9,22 @@ import java.util.Set;
 @SuppressWarnings("javadoc")
 public class TimerPerMnd {
 
-	/** Gjelder år. */
-	private final int ar;
+    /** Gjelder år. */
+    private final int ar;
     /** Gjelder måned. */
-   	private final int mnd;
+    private final int mnd;
 
-	/** Antall minutter det skal jobbes denne måneden. */
-	private final int fullMinutter;
+    /** Antall minutter det skal jobbes denne måneden. */
+    private final int fullMinutter;
 
     /** Inkluderte fridager. */
-	private Set<Fridag> fridager;
+    private Set<Fridag> fridager;
 
-	public TimerPerMnd(final int ar, final int mnd, final int antallMin){
+    public TimerPerMnd(final int ar, final int mnd, final int antallMin){
         this.ar= ar;
         this.mnd= mnd;
         this.fullMinutter= antallMin;
-	}
+    }
 
     public void addFridag(final Fridag dag) {
         this.fridager.add(dag);
